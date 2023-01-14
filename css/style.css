@@ -1,14 +1,296 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul,ol{
+
+ul,
+ol {
     list-style-type: none;
+
 }
+
 /* common css style start here */
+body {
+    background: #E5E5E5;
+}
+
+.container {
+    width: 870px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#main{
+    margin-top: 120px; /*there have some problem about navbar and main part margin gap*/
+} 
+
+main {
+    padding: 30px 30px 40px 30px;
+}
 
 /* common css style end here */
+/* navbar css style start here */
+.navbar {
+    background-color: #562EFF;
+    line-height: 94px;
+    margin-bottom: 36px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    display: none;
+}
+
+nav .container {
+    background-color: transparent;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.logo img {
+    width: 40px;
+    height: 50px;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    padding-left: 36px;
+}
+
+.menu ul li a {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.menu ul img {
+    padding-left: 36px;
+}
+
+/* navbar css style end here */
+/* top player css style start here */
+.top-player {
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-titel {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.players-items {
+    display: flex;
+    align-items: center;
+}
+
+.players-items img {
+    width: 56px;
+    height: 56px;
+}
+
+.players-name {
+    padding-left: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+hr {
+    margin-top: 40px;
+    border: 1px solid #d1d1d1;
+}
+
+/* top blog css style start here */
+.top-blog {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 30px;
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.blog-items {
+    display: flex;
+    align-items: center;
+}
+
+.blog-items img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-text {
+    padding-left: 16px;
+}
+
+.blog-titel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000;
+}
+
+.blog-text span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+    letter-spacing: 2px;
+}
+
+.blog-text a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #562EFF;
+}
+
+/* top blog css style end here */
+/* latest-course css style start here */
+footer {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.latest-course {
+    padding: 30px;
+}
+
+.course-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.course-items {
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.course-items img {
+    width: 224px;
+    height: 104px;
+    border-radius: 5px;
+}
+
+.course-titel {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #1E1E1E;
+    padding-top: 8px;
+}
+
+.teacher-name {
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 17px;
+    color: #ED6B4F;
+    padding: 10px 0;
+
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon i {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.icon i:nth-child(5) {
+    color: #AEAEAE;
+}
+
+.icon span {
+    color: #9F9F9F;
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.duration {
+    width: 95px;
+    height: 30px;
+    padding: 6px;
+    background-color: #FFE4E8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+}
+
+.duration p {
+    font-weight: 600;
+    font-size: 14.6913px;
+    line-height: 20px;
+    color: #FF4A60;
+}
+
+.duration i {
+    color: #FF4A60;
+    font-size: 20px;
+}
+/* latest-course css style end here */
+
+/* media query css start here */
+/* small device media query css start here */
+@media only screen and(max-width:688px) {
+    #main {
+        margin-top: 0px;
+        background-color: red;
+    }
+}
+/* small device media query css end here */

@@ -1,0 +1,8 @@
+/* media query css start here */
+/* small device media query css start here */
+@media only screen and(max-width:688px) {
+    #main {
+        margin-top: 10px;
+    }
+}
+/* small device media query css end here */
